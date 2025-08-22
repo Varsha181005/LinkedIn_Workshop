@@ -6,7 +6,7 @@ import os
 
 # --- Configuration for Certificate ---
 CERTIFICATE_TEMPLATE_PATH = "certificate_template.png" # Make sure this path is correct
-FONT_PATH = "" # Optional: Path to your desired font (e.g., "GreatVibes-Regular.ttf"). Leave empty to try Arial/default.
+FONT_PATH = "Roboto/Roboto-VariableFont_wdth,wght.ttf" # Optional: Path to your desired font (e.g., "GreatVibes-Regular.ttf"). Leave empty to try Arial/default.
 
 # --- CRITICAL ADJUSTMENTS FOR YOUR 2000x1414px IMAGE ---
 # **YOU MUST FINE-TUNE THESE BY TRIAL AND ERROR AFTER TESTING**
