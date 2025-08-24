@@ -11,10 +11,10 @@ FONT_PATH = "Roboto/Roboto-VariableFont_wdth,wght.ttf" # Optional: Path to your 
 # --- CRITICAL ADJUSTMENTS FOR YOUR 2000x1414px IMAGE ---
 # **YOU MUST FINE-TUNE THESE BY TRIAL AND ERROR AFTER TESTING**
 # These values are based on your 2000x1414px image dimensions and your template's layout.
-FONT_SIZE_NAME = 80 # Adjusted: This is a realistic size for a name on a 1414px high image.
+FONT_SIZE_NAME = 70 # Adjusted: This is a realistic size for a name on a 1414px high image.
 FONT_SIZE_TEXT = 40 # Adjusted: A good size for supporting text.
 NAME_Y_POS = 650 # Adjusted Y-coordinate to place the name below "This certificate is presented to".
-TEXT_Y_POS = 800 # Example Y-coordinate for other dynamic text if you add it later (e.g., seminar details).
+TEXT_Y_POS = 875 # Example Y-coordinate for other dynamic text if you add it later (e.g., seminar details).
 # --- END CRITICAL ADJUSTMENTS ---
 
 COLOR_NAME = (0, 0, 0) # Black color for the name (RGB)
@@ -221,24 +221,3 @@ if st.button("Generate Certificate"):
         else:
             st.warning("Please complete the LinkedIn Usage Self-Assessment first before generating your certificate.")
 
-st.markdown("---")
-st.subheader("Instructions for Setting Up Your Streamlit App:")
-st.markdown("""
-1.  **Save the code:** Save the Python code above as `app.py`.
-2.  **Prepare your certificate template image:** Create a PNG or JPG image (e.g., `certificate_template.png` or `certificate_template.jpg`) with your certificate design, leaving blank space for the name and seminar details. **Place this image in the same directory as `app.py`.**
-3.  **Optional: Add a custom font:** Download a `.ttf` font file (e.g., `GreatVibes-Regular.ttf`) from a reliable source (like [Google Fonts](https://fonts.google.com/)). **Place it in the same directory as this script.** Update `FONT_PATH` in the code if your font file has a different name. **Strongly recommended for best appearance.** If `FONT_PATH` is left empty, it will try to use "arial.ttf" and then Pillow's default.
-4.  **Crucially, adjust `FONT_SIZE_NAME`, `FONT_SIZE_TEXT`, `NAME_Y_POS`, and `TEXT_Y_POS`:**
-    * Open your `certificate_template.png` (or `.jpg`) in an image editor and confirm its **pixel dimensions (2000 x 1414 in your case)**.
-    * **Through trial and error**, using the recommended starting values above (`FONT_SIZE_NAME = 150`, `NAME_Y_POS = 460`), adjust them slightly until the text appears exactly where and how you want it on your template.
-5.  **Install Libraries:** If you haven't already, open your terminal or command prompt and run:
-    ```bash
-    pip install streamlit Pillow
-    ```
-6.  **Run the Streamlit app:** In your terminal, navigate to the directory where you saved `app.py`, and run:
-    ```bash
-    streamlit run app.py
-    ```
-7.  **Access and Use:** Your browser will automatically open to the Streamlit application (usually `http://localhost:8501`). Users can then complete the questionnaire and generate their certificates.
-""")
-
-st.info("Remember to **carefully adjust** the `FONT_SIZE_NAME`, `FONT_SIZE_TEXT`, `NAME_Y_POS`, and `TEXT_Y_POS` variables to match your specific certificate template's design and resolution. Experimentation is key to getting the text to display correctly.")
