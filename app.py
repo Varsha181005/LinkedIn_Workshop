@@ -11,10 +11,10 @@ FONT_PATH = "Roboto/Roboto-VariableFont_wdth,wght.ttf" # Optional: Path to your 
 # --- CRITICAL ADJUSTMENTS FOR YOUR 2000x1414px IMAGE ---
 # **YOU MUST FINE-TUNE THESE BY TRIAL AND ERROR AFTER TESTING**
 # These values are based on your 2000x1414px image dimensions and your template's layout.
-FONT_SIZE_NAME = 70 # Adjusted: This is a realistic size for a name on a 1414px high image.
+FONT_SIZE_NAME = 180 # Adjusted: This is a realistic size for a name on a 1414px high image.
 FONT_SIZE_TEXT = 40 # Adjusted: A good size for supporting text.
-NAME_Y_POS = 650 # Adjusted Y-coordinate to place the name below "This certificate is presented to".
-TEXT_Y_POS = 875 # Example Y-coordinate for other dynamic text if you add it later (e.g., seminar details).
+NAME_Y_POS = 2100 # Adjusted Y-coordinate to place the name below "This certificate is presented to".
+TEXT_Y_POS = 2000 # Example Y-coordinate for other dynamic text if you add it later (e.g., seminar details).
 # --- END CRITICAL ADJUSTMENTS ---
 
 COLOR_NAME = (0, 0, 0) # Black color for the name (RGB)
